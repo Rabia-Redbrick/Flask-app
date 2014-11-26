@@ -1,0 +1,19 @@
+<html>
+<head>
+<h2>Tables data </h2> 
+<h3>Tablename is {{tabname}}</h3>
+</head>
+{%if tabname=='User'%}
+	{% for u in data %}
+		<p> ID is {{u.id}}</p>
+		<p>NICKNAME is {{u.nickname}}</p>
+		<p>EMAIL is {{u.email}}</p>
+	{%endfor%}
+{%elif tabname=='employee'%}
+	{% for u in data %}
+		<p> ID is {{u.id}}</p>
+		<p>NAME is {{u.name}}</p>
+		<p>CONTACT NUMBER is {{u.contactno}}</p>
+	{%endfor%}
+{%endif%}
+</html>
